@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap");
 
 .navBar {
   z-index: 1;
   width: 1300px;
   height: 66px;
-  background-color: #FFFCE8;
+  background-color: #fffce8;
   border-radius: 50px;
   left: 0;
   right: 0;
@@ -15,7 +15,7 @@
   position: fixed;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -62,13 +62,13 @@
       a {
         text-decoration: none;
         color: #333;
-        font-family: 'Kanit', sans-serif;
+        font-family: "kanit", sans-serif;
         font-size: 16px;
         font-weight: 500;
 
         &:hover {
           text-decoration: underline;
-            color: #09A8D4;
+          color: #09a8d4;
         }
       }
 
@@ -81,7 +81,7 @@
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #FFFCE8;
+        background-color: #fffce8;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         padding: 10px 0;
@@ -95,7 +95,7 @@
             color: #333;
 
             &:hover {
-              color: #09A8D4;
+              color: #09a8d4;
             }
           }
         }
@@ -104,13 +104,13 @@
 
     .donate {
       a {
-        background-color: #09A8D4;
+        background-color: #09a8d4;
         height: 30px;
-        color: #FFFCE8;
+        color: #fffce8;
         padding: 0.5rem 1rem;
         border-radius: 50px;
         font-size: 20px;
-        font-family: 'Kanit', sans-serif;
+        font-family: "kanit", sans-serif;
         text-transform: uppercase;
         font-weight: 600;
         text-align: center;

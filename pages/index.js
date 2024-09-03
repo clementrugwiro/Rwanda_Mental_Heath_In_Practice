@@ -11,14 +11,12 @@ import OurTeam from "@/components/Ourteam/OurTeam";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <NavBar />
       <main>
         <LandingHome />
         <WhoWeAreHome />
         <TheWorkWeDo />
         <StatisticsSection/>
         <OurTeam/>
-        <Footer />
       </main>
     </div>
   );

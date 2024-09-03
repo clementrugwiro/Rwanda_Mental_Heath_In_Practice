@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap");
 
 .footer {
-  background-color: #FFFCE8; /* Footer background color */
+  background-color: #fffce8; /* Footer background color */
   color: black; /* Footer text color */
   padding: 40px 0;
   width: 100%;
   text-align: left;
-   font-family: 'Kanit', sans-serif;
-  
+  font-family: "kanit", sans-serif;
 
   .container {
     display: flex;
@@ -18,7 +17,7 @@
 
   .column {
     width: 30%; /* Width for each column */
-    
+
     h3 {
       font-size: 18px;
       margin-bottom: 20px;
@@ -39,7 +38,7 @@
           transition: color 0.3s;
 
           &:hover {
-            color: #09A8D4; /* Hover color */
+            color: #09a8d4; /* Hover color */
           }
         }
       }
@@ -49,13 +48,13 @@
       display: flex;
       gap: 15px; /* Space between icons */
       font-size: 24px; /* Icon size */
-      
+
       a {
         color: black;
         transition: color 0.3s;
 
         &:hover {
-          color: #09A8D4; /* Hover color for icons */
+          color: #09a8d4; /* Hover color for icons */
         }
       }
     }

@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap");
 
 .LandingHome {
- 
- height: 500px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,44 +11,46 @@
   margin: 0 auto;
   padding-top: 80px;
 
-
   .imageContainer {
     height: 100%;
     width: 50%;
     height: auto;
 
     img {
-    width: 80%;
-    height: auto;
-    display: block;
+      width: 80%;
+      height: auto;
+      display: block;
     }
 
     @keyframes rollOut {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
     }
   }
   .dotContainer {
-     z-index: 0;
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-
-}
-.dot {
-  width: 10px;
-  height: 10px;
-  background-color: #ccc;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.3s ease;
-}
-.dot.active {
-  background-color: #09A8D4; /* Change the color of the active dot */
-}
+    z-index: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  .dot.active {
+    background-color: #09a8d4; /* Change the color of the active dot */
+  }
 
   .textContainer {
     flex: 2;
@@ -59,24 +60,24 @@
     justify-content: center;
 
     h2 {
-      font-family: 'Kanit', sans-serif;
+      font-family: "kanit", sans-serif;
       font-size: 24px;
       margin-bottom: 10px;
     }
 
     p {
-      font-family: 'Kanit', sans-serif;
+      font-family: "kanit", sans-serif;
       font-size: 16px;
       margin-bottom: 20px;
     }
 
     .donateButton {
-      background-color: #09A8D4;
+      background-color: #09a8d4;
       color: white;
       padding: 0.5rem 1rem;
       border-radius: 4px;
       font-size: 20px;
-      font-family: 'Kanit', sans-serif;
+      font-family: "kanit", sans-serif;
       text-transform: uppercase;
       font-weight: bold;
       text-align: center;

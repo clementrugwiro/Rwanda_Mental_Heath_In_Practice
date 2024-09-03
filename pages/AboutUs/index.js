@@ -10,11 +10,9 @@ import Footer from "@/components/footer/Footer";
 const AboutUs = () => {
   return (
     <div className={styles.container}>
-      <NavBar />
       <div className={styles.main}>
         <WhoWeAreHome />
         <OurTeam />
-        <Footer />
       </div>
     </div>
   );
