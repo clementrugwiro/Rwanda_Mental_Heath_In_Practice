@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+.teamContainer {
+  overflow: hidden; /* Hide overflow to ensure no scroll bars appear */
+  width: 100%; /* Full width of the viewport */
+  background: linear-gradient(180deg, #FFFCE8, #d0d0d0); /* Gradient background with two shades of gray */
+  padding: 50px 0;
+  position: relative;
+  font-family: 'Kanit', sans-serif;
+  display: flex; /* Flex container for horizontal layout */
+  flex-direction: column; /* Stack title and teamWrapper vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.title {
+  font-family: 'kanit', sans-serif;
+  font-size: 3rem; /* Adjust font size as needed */
+  color: #e96b24; /* Title color */
+  margin-bottom: 30px; /* Space below the title */
+  position: relative; /* Position relative for pseudo-element */
+  width: 100%; /* Full width to accommodate line */
+  max-width: 1200px; /* Optional: Restrict max-width for better layout */
+  text-align: left; /* Align text to the left */
+  line-height: 1.5;
+}
+
+.title::after {
+  content: ""; /* Create a pseudo-element for the line */
+  display: block;
+  position: absolute;
+  left: 0; /* Start line from the left edge of the title */
+  bottom: -10px; /* Position below the title */
+  width: 100%; /* Full width of the container */
+  height: 2px; /* Height of the line */
+  background-color: #e96b24; /* Line color */
+}
+
+.teamWrapper {
+  display: flex; /* Flex container for horizontal layout */
+  width: 60%; /* Adjusted to accommodate all team members */
+  animation: scroll 20s linear infinite; /* Animation for continuous scrolling */
+}
+
+.teamMember {
+  background: #FFFCE8; /* Background color for each profile */
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  width: 200px; /* Adjusted width of the profile */
+  height: 350px; /* Adjusted height of the profile */
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Slight shadow beneath the profile */
+  flex-shrink: 0; /* Prevent shrinking of the flex items */
+  margin-right: 20px; /* Space between profiles */
+}
+
+.image {
+  width: 100%; /* Image takes full width */
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensure the image covers the area */
+  border-bottom: 2px solid #d0d0d0; /* Add a slight border */
+}
+
+.info {
+  padding: 10px 0;
+}
+
+.info h3 {
+  font-size: 1.4rem; /* Adjusted font size for the name */
+  color: #09A8D4; /* Title color */
+  margin: 10px 0; /* Space above and below the title */
+}
+
+.info p {
+  font-size: 1rem; /* Adjusted font size for the position */
+  color: #333; /* Color for the text */
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between social icons */
+}
+
+.socialIcons a {
+  color: #09A8D4; /* Icon color */
+  font-size: 1.4rem; /* Size of the icons */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-199.9%);
+  }
+}

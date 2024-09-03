@@ -1,0 +1,41 @@
+// File: src/components/StatisticsSection/StatisticsSection.module.scss
+
+.statisticsSection {
+  background-color: #e7e7e7;  // Background color to match the page
+  padding: 30px;
+  border-radius: 8px;  // Rounded corners for better aesthetics
+  max-width: 1200px;  // Maximum width for the section to prevent overflow
+  width: 100%;  // Make the component responsive
+  margin: 0 auto;  // Center the component on the page
+  text-align: center;  // Center align the title and stats
+  box-sizing: border-box;  // Include padding and border in the element's total width and height
+}
+.title {
+  font-size: 2rem;  // Font size for the title
+  color: #09A8D4;  // Color for the title
+  margin-bottom: 30px;  // Space below the title
+  font-weight: bold;  // Bold text for the title
+}
+
+.statsContainer {
+  display: flex;
+  justify-content: space-between;  // Spread the stats across the row
+  align-items: center;
+}
+
+.stat {
+  text-align: center;
+  flex: 1;  // Equal width for each stat block
+
+  h3 {
+    font-size: 3.5rem;  // Larger font size for the numbers
+    margin: 0;
+    color: #09A8D4;  // Main color for the numbers
+  }
+
+  p {
+    margin: 10px 0 0;  // Space above the labels
+    font-size: 1.8rem;  // Smaller font size for the labels
+    color: #333;  // Color for the text
+  }
+}

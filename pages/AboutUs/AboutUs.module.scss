@@ -1,0 +1,15 @@
+.container {
+  background-color: #FFFCE8;  // Set the background color for the entire page
+  min-height: 100vh;  // Ensures the background color covers the whole viewport height
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;  // Align children vertically
+}
+
+.main{
+  padding-top: 60px;
+}
+
+
+
+

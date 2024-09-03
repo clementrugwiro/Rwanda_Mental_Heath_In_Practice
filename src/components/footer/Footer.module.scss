@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+.footer {
+  background-color: #FFFCE8; /* Footer background color */
+  color: black; /* Footer text color */
+  padding: 40px 0;
+  width: 100%;
+  text-align: left;
+   font-family: 'Kanit', sans-serif;
+  
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .column {
+    width: 30%; /* Width for each column */
+    
+    h3 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 10px;
+        font-size: 14px;
+
+        a {
+          color: black; /* Link color */
+          text-decoration: none;
+          transition: color 0.3s;
+
+          &:hover {
+            color: #09A8D4; /* Hover color */
+          }
+        }
+      }
+    }
+
+    .socialIcons {
+      display: flex;
+      gap: 15px; /* Space between icons */
+      font-size: 24px; /* Icon size */
+      
+      a {
+        color: black;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #09A8D4; /* Hover color for icons */
+        }
+      }
+    }
+  }
+}
