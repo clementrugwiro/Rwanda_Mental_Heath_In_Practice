@@ -1,0 +1,123 @@
+// File: src/pages/Impact.module.scss
+
+.impactPage {
+  padding: 0 20px;
+  background-color: #f4f4f4;
+  font-family: 'Kanit', sans-serif;
+}
+
+.heroSection {
+  background-color: #09a8d4; /* Primary accent color */
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.heroSection h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.heroSection p {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.projectHighlights {
+  background-color: #fff;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.projectHighlights h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between project cards */
+}
+
+.testimonialsSection {
+  background-color: #d0d0d0; /* Reuse the primary accent color */
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonialsSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.testimonialsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial {
+  background-color: #fff;
+  color: #333;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.quote {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.author {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0;
+}
+
+.callToAction {
+  background-color: #09a8d4; /* Reuse the primary accent color */
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.callToAction h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.callToAction p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.ctaButton {
+  background-color: white;
+  color: #09a8d4; /* Reuse the primary accent color */
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+  }
+}

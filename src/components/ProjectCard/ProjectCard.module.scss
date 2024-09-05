@@ -1,0 +1,53 @@
+// File: src/components/Projects/ProjectCard.module.scss
+
+.projectCard {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.imageContainer {
+  width: 120px;  /* Make the container smaller to fit a circle */
+  height: 120px; /* Same height to make it a circle */
+  overflow: hidden;
+  border-radius: 50%; /* Make the container circular */
+  margin: 0 auto 15px; /* Center the circle and add margin */
+  border: 4px solid #E96B24; /* Orange border stroke */
+  display: flex; /* Center the image inside */
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* Ensure the image is circular */
+}
+
+.projectName {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.projectLocation {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.projectDescription {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 10px;
+}

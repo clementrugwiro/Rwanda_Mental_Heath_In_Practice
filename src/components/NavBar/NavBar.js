@@ -31,10 +31,10 @@ const NavBar = () => {
               <Link href="/Projects">PROJECTS</Link>
             </li>
             <li>
-              <Link href="/impact">IMPACT</Link>
+              <Link href="/Impact">IMPACT</Link>
             </li>
             <li>
-              <Link href="/approach">APPROACH</Link>
+              <Link href="/Approach">APPROACH</Link>
             </li>
           </ul>
         </li>
