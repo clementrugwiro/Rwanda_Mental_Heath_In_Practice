@@ -2,7 +2,7 @@ import "./globals.scss"; // Import global styles
 import { useEffect } from "react";
 import Head from "next/head";
 import NavBar from "@/components/NavBar/NavBar";
-import Footer from "@/components/Footer/Footer";
+import Footer from "@/components/footer/Footer";
 
 // Custom App component for Next.js
 const MyApp = ({ Component, pageProps }) => {

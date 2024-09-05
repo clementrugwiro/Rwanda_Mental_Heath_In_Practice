@@ -3,7 +3,7 @@ import NavBar from "@/components/NavBar/NavBar";
 import WhoWeAreHome from "@/components/WhoWeAreHome/WhoWeAreHome";
 import TheWorkWeDo from "@/components/TheWorkWeDo/TheWorkWeDo";
 import OurTeam from "@/components/Ourteam/OurTeam";
-import Footer from "@/components/Footer/Footer";
+import Footer from "@/components/footer/Footer";
 
 const AboutUs = () => {
   return (
