@@ -27,7 +27,6 @@ const projects = [
 const Projects = () => {
   return (
     <div className={styles.container}>
-      <NavBar />
       <h2 className={styles.title}>Our Projects</h2>
       <div className={styles.projects}>
         {projects.map((project, index) => (
