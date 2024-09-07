@@ -1,0 +1,104 @@
+// File: src/pages/JobsTenders.module.scss
+
+.jobsTendersPage {
+  padding: 0 20px;
+  background-color: #f4f4f4;
+  font-family: 'Kanit', sans-serif; /* Using the default Kanit font */
+}
+
+.heroSection {
+  background-color: #09a8d4; /* Accent color */
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.heroSection h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.heroSection p {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.jobsSection,
+.tendersSection {
+  background-color: #fff;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.jobsSection h2,
+.tendersSection h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.jobCard,
+.tenderCard {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.jobContent,
+.tenderContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.jobTitle,
+.tenderTitle {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.jobDescription,
+.tenderDescription {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.jobDeadline,
+.tenderDeadline {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.downloadButton {
+  font-size: 1.1rem;
+  color: #09a8d4;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #fff;
+  border: 2px solid #09a8d4;
+  padding: 10px 20px;
+  border-radius: 5px;
+  align-self: flex-start;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: #09a8d4;
+    color: #fff;
+  }
+}

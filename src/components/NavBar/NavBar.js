@@ -42,13 +42,13 @@ const NavBar = () => {
           <Link href="#">MEDIA</Link>
           <ul className={styles.dropdownMenu}>
             <li>
-              <Link href="/news-updates">NEWS & UPDATES</Link>
+              <Link href="/NewsUpdates">NEWS & UPDATES</Link>
             </li>
             <li>
-              <Link href="/gallery">GALLERY</Link>
+              <Link href="/Gallery">GALLERY</Link>
             </li>
             <li>
-              <Link href="/blog">BLOG</Link>
+              <Link href="/Blog">BLOG</Link>
             </li>
           </ul>
         </li>
@@ -56,7 +56,7 @@ const NavBar = () => {
           <Link href="#">PUBLICATIONS</Link>
           <ul className={styles.dropdownMenu}>
             <li>
-              <Link href="/reports">REPORTS</Link>
+              <Link href="/Reports">REPORTS</Link>
             </li>
             <li>
               <Link href="/resources">RESOURCES</Link>
@@ -67,10 +67,10 @@ const NavBar = () => {
           </ul>
         </li>
         <li>
-          <Link href="/jobs">JOB/TENDERS</Link>
+          <Link href="/JobsTenders">JOB/TENDERS</Link>
         </li>
         <li>
-          <Link href="/contact">CONTACT US</Link>
+          <Link href="/ContactUs">CONTACT US</Link>
         </li>
         <li className={styles.donate}>
           <Link href="/donate">DONATE</Link>

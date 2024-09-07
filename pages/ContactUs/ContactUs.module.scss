@@ -1,0 +1,127 @@
+// File: src/pages/ContactUs.module.scss
+
+.contactUsPage {
+  padding: 0 20px;
+  background-color: #f4f4f4;
+  font-family: 'Kanit', sans-serif; /* Using the default Kanit font */
+}
+
+.heroSection {
+  background-color: #09a8d4; /* Accent color */
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.heroSection h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.heroSection p {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contactFormSection {
+  background-color: #fff;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.formContainer {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contactForm h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.inputGroup label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.inputGroup input,
+.inputGroup select,
+.inputGroup textarea {
+  padding: 10px;
+  font-size: 1.1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.submitButton {
+  font-size: 1.2rem;
+  color: white;
+  background-color: #09a8d4;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #007bbd;
+  }
+}
+
+.contactInfoSection {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contactInfoSection h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.infoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.infoItem {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+.infoItem h3 {
+  font-size: 1.8rem;
+  color: #09a8d4;
+  margin-bottom: 10px;
+}
+
+.infoItem p {
+  font-size: 1.2rem;
+  color: #666;
+}
