@@ -22,11 +22,23 @@ const ContactUs = () => {
           <form className={styles.contactForm}>
             <div className={styles.inputGroup}>
               <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" required />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
             </div>
             <div className={styles.inputGroup}>
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
             </div>
             <div className={styles.inputGroup}>
               <label htmlFor="subject">Subject</label>
@@ -42,6 +54,7 @@ const ContactUs = () => {
                 id="message"
                 name="message"
                 rows="5"
+                placeholder="Your Message"
                 required
               ></textarea>
             </div>
