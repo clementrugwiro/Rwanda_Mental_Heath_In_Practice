@@ -1,7 +1,15 @@
+import { useState } from "react";
 import styles from "./NavBar.module.scss";
 import Link from "next/link";
+import { FaBars, FaTimes } from "react-icons/fa"; // Importing the hamburger and close icons
 
 const NavBar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <nav className={styles.navBar}>
       <div className={styles.logo}>
@@ -9,7 +17,18 @@ const NavBar = () => {
           <img src="/images/logo.png" alt="Logo" />
         </Link>
       </div>
-      <ul>
+      <div className={styles.hamburgerIcon} onClick={toggleMobileMenu}>
+        <FaBars />
+      </div>
+      <ul className={`${styles.menu} ${isMobileMenuOpen ? styles.open : ""}`}>
+        {isMobileMenuOpen && (
+          <div className={styles.closeIcon} onClick={toggleMobileMenu}>
+            <FaTimes />
+          </div>
+        )}
+        <li>
+          <Link href="/">HOME</Link>
+        </li>
         <li className={styles.dropdown}>
           <Link href="#">WHO WE ARE</Link>
           <ul className={styles.dropdownMenu}>

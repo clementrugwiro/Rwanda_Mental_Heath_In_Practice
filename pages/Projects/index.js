@@ -1,47 +1,39 @@
 // File: src/components/Projects/Projects.js
 
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+import { useState, useEffect } from "react";
+import axios from "axios";
 import styles from "./Projects.module.scss";
 import ProjectCard from "@/components/ProjectCard/ProjectCard";
 
-const projects = [
-  {
-    name: "Project One",
-    location: "Location One",
-    image: "/images/Projects/project1.jpg",
-    description: "A brief description of Project One.",
-  },
-  {
-    name: "Project Two",
-    location: "Location Two",
-    image: "/images/Projects/project2.jpg",
-    description: "A brief description of Project Two.",
-  },
-  {
-    name: "Project Three",
-    location: "Location Three",
-    image: "/images/Projects/project3.jpg",
-    description: "A brief description of Project Three.",
-  },
-  {
-    name: "Project Four",
-    location: "Location Four",
-    image: "/images/Projects/project4.jpg",
-    description: "A brief description of Project Four.",
-  },
-  // Add more projects as needed
-];
 
 const Projects = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    console.log("API",JSON.stringify(process.env));
+    // Fetch data from the API
+    axios
+      .get(`http://127.0.0.1:8000/api/our-work/`)
+      .then((response) => {
+        // Set the projects data from the API response
+        setProjects(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching projects data:", error);
+      });
+  }, []);
+    console.log(projects)
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Our Projects</h2>
       <div className={styles.projects}>
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <ProjectCard
-            key={index}
-            name={project.name}
-            location={project.location}
-            image={project.image}
+            key={project.id} // Use project.id as the key
+            name={project.title}
+            location={project.location || "Unknown Location"} // Adjust if location is not in the API data
+            image={project.image} // Adjust this if needed based on your API response
             description={project.description}
           />
         ))}
@@ -49,5 +41,6 @@ const Projects = () => {
     </div>
   );
 };
+
 
 export default Projects;
